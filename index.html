@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT Prakarsa Tani Sejati</title>
+
+<style>
+body {font-family: 'Segoe UI', sans-serif; margin:0; background:#f5f7f6;}
+header {background:#0b5e2e; color:white; padding:15px 40px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0;}
+nav a {color:white; margin:0 15px; text-decoration:none; font-weight:500;}
+nav a:hover {border-bottom:2px solid white;}
+.hero {background:url('kebun sawit 1.jpg') center/cover no-repeat; color:white; padding:140px 20px; text-align:center;}
+.hero h1 {font-size:40px;}
+.section {padding:70px 60px; background:white; margin-bottom:10px;}
+.section.gray {background:#eef3f1;}
+.grid {display:flex; flex-wrap:wrap; gap:25px;}
+.card {flex:1 1 300px; background:white; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+.card h3 {color:#0b5e2e;}
+.stats {display:flex; justify-content:space-around; text-align:center;}
+.stats div {font-size:20px;}
+.gallery img {width:100%; max-width:320px; border-radius:10px;}
+.footer {background:#0b5e2e; color:white; padding:30px; text-align:center;}
+input, textarea {width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:6px;}
+button {background:#0b5e2e; color:white; padding:12px 25px; border:none; border-radius:6px; cursor:pointer;}
+button:hover {background:#08491f;}
+/* BACKGROUND KHUSUS TIAP SECTION */
+.bg-about{background:url('kebun sawit 3.jpg') center/cover no-repeat; color:white;}
+.bg-business{background:url('kebun sawit 2.jpg') center/cover no-repeat; color:white;}
+.bg-sustain{background:url('kebun sawit 1.jpg') center/cover no-repeat; color:white;}
+.bg-contact{background:url('buah sawit 1.jpg') center/cover no-repeat; color:white;}
+
+/* OVERLAY BIAR TEKS JELAS */
+.bg-about, .bg-business, .bg-sustain, .bg-contact{
+position:relative;
+}
+.bg-about::before, .bg-business::before, .bg-sustain::before, .bg-contact::before{
+content:"";
+position:absolute;
+top:0; left:0; right:0; bottom:0;
+background:rgba(0,0,0,0.5);
+}
+.bg-about > *, .bg-business > *, .bg-sustain > *, .bg-contact > *{
+position:relative;
+z-index:2;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h2>PT Prakarsa Tani Sejati</h2>
+<nav>
+<a href="#">Beranda</a>
+<a href="#about">Tentang</a>
+<a href="#business">Bisnis</a>
+<a href="#sustain">Keberlanjutan</a>
+<a href="#csr">CSR</a>
+<a href="#contact">Kontak</a>
+</nav>
+<a href="#location" style="color:white; margin-left:15px; font-weight:bold;">Lokasi</a>
+</header>
+
+<section class="hero">
+<img src="foto LOGO 1.jpg.jpeg" alt="Logo" style="width:120px; margin-bottom:20px;">
+<h1>PT Prakarsa Tani Sejati</h1>
+<p>Pelopor Perkebunan Kelapa Sawit Berkelanjutan di Ketapang</p>
+</section>
+
+<section class="section bg-about" id="about">
+<h2>Tentang Perusahaan</h2>
+<p>
+Perjalanan PT Prakarsa Tani Sejati dimulai pada 5 November 1984 sebagai perusahaan Perkebunan Besar Swasta Nasional di bawah Bumi Raya Utama Group.
+Perusahaan mulai operasional tahun 1993 dengan pembukaan lahan dan menjadi pelopor sawit di Ketapang.
+Pada tahun 1995 dibangun pabrik dan mulai beroperasi tahun 1997.
+Perusahaan juga mengembangkan program KKPA bagi 1.022 KK pada 2003–2009.
+</p>
+</section>
+
+<section class="section gray">
+<h2>Visi & Misi</h2>
+<div class="grid">
+<div class="card"><h3>Visi</h3><p>Menopang pembangunan nasional sektor perkebunan dan ekonomi.</p></div>
+<div class="card"><h3>Misi</h3><p>Mengelola kelapa sawit secara efisien, berdaya saing, dan berkelanjutan serta bermitra dengan petani.</p></div>
+</div>
+</section>
+
+<section class="section bg-business" id="business">
+<h2>Unit Bisnis</h2>
+<div class="grid">
+<div class="card">
+<h3>🌴 Perkebunan Kelapa Sawit</h3>
+<p>Lokasi: Ketapang, Kalimantan Barat<br>Luas: 7.040,39 Ha<br>Karyawan: 1.249 orang</p>
+</div>
+<div class="card">
+<h3>🏭 Pabrik CPO</h3>
+<p>Lokasi: Teluk Bayur<br>Kapasitas: 168.767 ton/tahun<br>Luas: 50 Ha</p>
+</div>
+</div>
+</section>
+
+<section class="section gray">
+<h2>Statistik Operasional</h2>
+<div class="stats">
+<div><b>12.221 Ha</b><br>Total Lahan</div>
+<div><b>37.237 Ton</b><br>CPO/Tahun</div>
+<div><b>5.505 Ton</b><br>PK/Tahun</div>
+</div>
+</section>
+
+<section class="section bg-sustain" id="sustain">
+<h2>Keberlanjutan</h2>
+<p>Sertifikasi ISPO: MISB-ISPO/147<br>Berkomitmen terhadap lingkungan dan praktik berkelanjutan.</p>
+</section>
+
+<section class="section gray" id="csr">
+<h2>Program CSR</h2>
+<div class="grid">
+<div class="card">🏥 Program Kesehatan Masyarakat</div>
+<div class="card">🎓 Pendidikan & Beasiswa</div>
+<div class="card">💼 Pemberdayaan Ekonomi Lokal</div>
+<div class="card">🏗️ Infrastruktur Sosial</div>
+</div>
+</section>
+
+<section class="section gallery">
+<h2>Galeri Perusahaan</h2>
+<div class="grid">
+<img src="pabrik.jpg" alt="Pabrik">
+<img src="foto kebun 2.jpg.jpeg" alt="Kebun">
+<img src="foto CSR 3.jpg.jpeg" alt="CSR 1">
+<img src="foto CSR 4.jpg.jpeg" alt="CSR 2">
+<img src="foto CSR 5.jpg.jpeg" alt="CSR 3">
+</div>
+</section>
+
+<!-- SLIDER GALERI -->
+<section class="section gray">
+<h2>Galeri Highlight</h2>
+<div style="position:relative; max-width:700px; margin:auto;">
+  <img id="slider" src="pabrik.jpg" style="width:100%; border-radius:10px;">
+<div style="text-align:center; margin-top:10px;">
+<button onclick="prevSlide()">⏮ Prev</button>
+<button onclick="nextSlide()">Next ⏭</button>
+</div>
+</div>
+</section>
+
+<!-- BERITA / KEGIATAN -->
+<section class="section" id="news">
+<h2>Berita & Kegiatan</h2>
+<div class="grid">
+  <div class="card">
+    <h3><a href="#detail1">Kegiatan CSR Masyarakat</a></h3>
+    <small>📅 12 Januari 2026</small>
+    <p>Program kesehatan dan bantuan sosial bagi masyarakat sekitar.</p>
+  </div>
+  <div class="card">
+    <h3><a href="#detail2">Pengembangan Kebun</a></h3>
+    <small>📅 5 Februari 2026</small>
+    <p>Ekspansi dan pengelolaan kebun sawit berkelanjutan.</p>
+  </div>
+  <div class="card">
+    <h3><a href="#detail3">Program Kemitraan Petani</a></h3>
+    <small>📅 20 Maret 2026</small>
+    <p>Dukungan kepada petani lokal melalui KKPA.</p>
+  </div>
+</div>
+</section>
+
+<!-- DETAIL BERITA -->
+<section class="section gray" id="detail1">
+<h2>Detail: Kegiatan CSR</h2>
+<p>Perusahaan melaksanakan berbagai kegiatan sosial seperti bantuan kesehatan dan pelayanan masyarakat di sekitar wilayah operasional.</p>
+</section>
+
+<section class="section gray" id="detail2">
+<h2>Detail: Pengembangan Kebun</h2>
+<p>Pengembangan kebun dilakukan dengan teknologi modern dan prinsip keberlanjutan untuk meningkatkan produktivitas.</p>
+</section>
+
+<section class="section gray" id="detail3">
+<h2>Detail: Kemitraan Petani</h2>
+<p>Program KKPA membantu petani meningkatkan hasil dan kesejahteraan melalui kemitraan yang berkelanjutan.</p>
+</section>
+
+<section class="section bg-contact" id="contact">
+<h2>Kontak</h2>
+<p><b>Jakarta Office:</b> Jl. Pembangunan 1 No.3</p>
+<p><b>Pontianak Office:</b> Jl. Adisucipto Km 8</p>
+<p><b>Telp:</b> (0561) 721688</p>
+<p><b>Email:</b> brugptk@gmail.com</p>
+
+<h3>Kirim Pesan</h3>
+<form onsubmit="alert('Pesan terkirim'); return false;">
+<input type="text" placeholder="Nama" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Pesan" required></textarea>
+<button>Kirim</button>
+</form>
+
+<iframe src="https://maps.google.com/maps?q=WF29+597, Teluk Bayur, Sungai Laur, Ketapang, Kalimantan Barat&z=15&output=embed" width="100%" height="300"></iframe>
+</section>
+
+<section class="section gray" id="location">
+<h2>Lokasi Perusahaan</h2>
+
+<h3>Kebun & Pabrik</h3>
+<p>WF29+597, Teluk Bayur, Kec. Sungai Laur, Kabupaten Ketapang, Kalimantan Barat 79417</p>
+<iframe src="https://maps.google.com/maps?q=WF29+597, Teluk Bayur, Sungai Laur, Ketapang, Kalimantan Barat&z=15&output=embed" width="100%" height="300"></iframe>
+
+<h3 style="margin-top:30px;">Kantor Pontianak</h3>
+<p>Jl. Adisucipto Km 8, Sei Raya, Kubu Raya, Kalimantan Barat</p>
+<iframe src="https://maps.google.com/maps?q=Adisucipto Km 8 Pontianak&z=15&output=embed" width="100%" height="300"></iframe>
+
+<h3 style="margin-top:30px;">Kantor Jakarta</h3>
+<p>Jl. Pembangunan 1 No. 3, Jakarta</p>
+<iframe src="https://maps.google.com/maps?q=Jl Pembangunan 1 No 3 Jakarta&z=15&output=embed" width="100%" height="300"></iframe>
+</section>
+
+<footer class="footer">
+<p>© 2026 PT Prakarsa Tani Sejati</p>
+</footer>
+
+<script>
+// SLIDER OTOMATIS + MANUAL
+let images = [
+  "pabrik.jpg",
+  "foto kebun 2.jpg.jpeg",
+  "foto CSR 3.jpg.jpeg",
+  "foto CSR 4.jpg.jpeg",
+  "foto CSR 5.jpg.jpeg"
+];
+let i = 0;
+
+function showSlide(){
+  document.getElementById("slider").src = images[i];
+}
+
+function nextSlide(){
+  i = (i + 1) % images.length;
+  showSlide();
+}
+
+function prevSlide(){
+  i = (i - 1 + images.length) % images.length;
+  showSlide();
+}
+
+setInterval(nextSlide, 3000);
+</script>
+
+</body>
+</html>
